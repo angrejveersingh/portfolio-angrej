@@ -40,7 +40,7 @@ export default function About({}: Props) {
 
       <div className="space-y-10 px-10 md:px-10">
         <h4 className="text-2xl md:text-4xl xl:text-4xl font-semibold">
-          Brief introduction of <span className="underline decoration-[#F7AB0A]/50">Angrej veer Singh</span>
+          Brief Introduction of <span className="underline decoration-[#F7AB0A]/50">Angrej veer Singh</span>
         </h4>
         <p className='text-sm'>
           Possess a solid understanding of computer fundamentals. Reliable,
