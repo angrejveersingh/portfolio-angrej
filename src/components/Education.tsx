@@ -19,7 +19,7 @@ export default function Experience({}: Props) {
       </h3>
 
       <div
-        style={{ position: "inherit", top: 90 }}
+       
         className="w-full  flex space-x-5 overflow-x-scroll p-10 snap-x snap-mandatory "
       >
         {/* <EducationCard/> */}
@@ -55,16 +55,16 @@ export default function Experience({}: Props) {
               className="hidden sm:flex w-full bg-[#F7AB0A]/50 h-0.5 dark:bg-[#F7AB0A]/40"></motion.div>
             </div>
             <div className="mt-3 sm:pr-8">
-              <h2 className="text-lg font-semibold text-gray-900 dark:text-white">
+              <h2 className="text-lg font-semibold text-white">
                 University Of Southern Queensland
               </h2>
-              <h4 className=" text-base font-semibold text-gray-900 dark:text-slate-200">
+              <h4 className=" text-base font-semibold text-slate-200">
                 Bachelor of Information Technology
               </h4>
               <time className="block mb-2 text-sm font-normal leading-none text-gray-400 dark:text-gray-500">
                 March, 2016 - July, 2019
               </time>
-              <p className="text-sm md:text-base xl:text-base font-normal text-gray-500 dark:text-gray-400">
+              <p className="text-base hidden  md:flex xl:flex font-normal text-gray-500 dark:text-gray-400">
                 Lernt about the web development, oop concept and basic concepts of networking
               </p>
             </div>
@@ -100,16 +100,16 @@ export default function Experience({}: Props) {
               className="hidden sm:flex w-full bg-[#F7AB0A]/50 h-0.5 dark:bg-[#F7AB0A]/40"></motion.div>
             </div>
             <div className="mt-3 sm:pr-8">
-              <h2 className="text-lg font-semibold text-gray-900 dark:text-white">
+              <h2 className="text-lg font-semibold text-white">
                 Indus Institute
               </h2>
-              <h4 className="text-base font-semibold text-gray-900 dark:text-slate-200">
+              <h4 className="text-base font-semibold text-slate-200">
                 Professional year
               </h4>
               <time className="block mb-2 text-sm font-normal leading-none text-gray-400 dark:text-gray-500">
                 October, 2019 - October, 2020
               </time>
-              <p className="text-base font-normal text-gray-500 dark:text-gray-400">
+              <p className="text-base hidden  md:flex xl:flex  font-normal text-gray-500 dark:text-gray-400">
                 Learnt about the office culture and ethics of work environment
               </p>
             </div>
@@ -144,16 +144,16 @@ export default function Experience({}: Props) {
               className="hidden sm:flex w-full  bg-[#F7AB0A]/50 h-0.5 dark:bg-[#F7AB0A]/40"></motion.div>
             </div>
             <div className="mt-3 sm:pr-8">
-              <h2 className="text-lg font-semibold text-gray-900 dark:text-white">
+              <h2 className="text-lg font-semibold text-white">
                 Fanshawe College
               </h2>
-              <h4 className="text-base font-semibold text-gray-900 dark:text-slate-200">
+              <h4 className="text-base font-semibold text-slate-200">
                 Mobile Application Development
               </h4>
               <time className="block mb-2 text-sm font-normal leading-none text-gray-400 dark:text-gray-500">
                 January, 2022 - April, 2023
               </time>
-              <p className="text-base font-normal text-gray-500 dark:text-gray-400">
+              <p className="text-base hidden  md:flex xl:flex font-normal text-gray-500 dark:text-gray-400">
                 Learnt mobile application development with different technologies
               </p>
             </div>

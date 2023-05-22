@@ -1,10 +1,38 @@
 "use client"
-import React from 'react'
+import React,{ useState, useCallback, useEffect }  from 'react'
 import { motion } from "framer-motion"
+
+
+const useMediaQuery = (width: any) => {
+    const [targetReached, setTargetReached] = useState(false);
+  
+    const updateTarget = useCallback((e: { matches: any; }) => {
+      if (e.matches) {
+        setTargetReached(true);
+      } else {
+        setTargetReached(false);
+      }
+    }, []);
+  
+    useEffect(() => {
+      const media = window.matchMedia(`(max-width: ${width}px)`);
+      media.addListener(updateTarget);
+  
+      // Check on mount (callback is not called until a change occurs)
+      if (media.matches) {
+        setTargetReached(true);
+      }
+  
+      return () => media.removeListener(updateTarget);
+    }, []);
+  
+    return targetReached;
+  };
 
 type Props = {}
 
 export default function Projects({}: Props) {
+    const isBreakpoint = useMediaQuery(768);
     const projects =[
         {
             name:"Spotify shorts App",
@@ -40,24 +68,32 @@ export default function Projects({}: Props) {
             Projects
         </h3>
 
-        <div className='relative w-full flex overflow-x-scroll overflow-y-hidden snap-x snap-mandatory z-20 scrollbar scrollbar-track-gray-400/20 scrollbar-thumb-[#F7AB0A]/80'>
+        <div className='relative w-full top-16 flex overflow-x-scroll overflow-y-hidden snap-x snap-mandatory z-20 scrollbar scrollbar-track-gray-400/20 scrollbar-thumb-[#F7AB0A]/80'>
             {projects.map((project,i)=>(
                 <div key={project.name} className='w-screen flex-shrink-0 snap-center flex flex-col space-y-5 items-center justify-center p-20 md:p-44 h-screen'>
-                    <motion.img
-                    initial={{
-                        y:-300,
-                        opacity:0
-                    }}
-                    transition={{duration:1.2}}
-                    whileInView={{
-                        opacity:1,
-                        y:0
-                    }}
-                    viewport={{once:true}}
+                    
+                    { isBreakpoint ? (<img
+                   
                         src={project.image}
                         alt=""
-                        className=' w-40 h-40 md:w-48 md:h-48 xl:w-52 xl:h-52'
-                    />
+                        className={project.image=="/diligent-logo.png"?' w-40 h-24 md:w-46 md:h-24 xl:w-52 xl:h-28':' w-40 h-40 md:w-48 md:h-48 xl:w-52 xl:h-52'}
+                    />):(<motion.img
+                        initial={{
+                            y:-300,
+                            opacity:0
+                        }}
+                        transition={{duration:1.2}}
+                        whileInView={{
+                            opacity:1,
+                            y:0
+                        }}
+                        viewport={{once:true}}
+                            src={project.image}
+                            alt=""
+                            className={project.image=="/diligent-logo.png"?' w-40 h-24 md:w-46 md:h-24 xl:w-52 xl:h-28':' w-40 h-40 md:w-48 md:h-48 xl:w-52 xl:h-52'}
+                        />)}
+                    
+                    
 
                     <div className='space-y-10 px-0 md:px-10 max-w-6xl'>
                         <h4 className='text-2xl md:text-4xl xl:text-4xl font-semibold text-center'>
@@ -65,7 +101,7 @@ export default function Projects({}: Props) {
                             
                         </h4>
 
-                        <p className='text-sm md:text-lg xl:text-lg text-center md:text-left'>
+                        <p className='text-sm md:text-base xl:text-lg text-center md:text-left'>
                             {project.description}
                         </p>
                     </div>

@@ -35,7 +35,7 @@ export default function Home() {
       </div>
 
       {/* Education */}
-      <section id='education' className='snap-center'>
+      <section id='education' className='snap-center h-[100%]'>
          <Education/>
       </section>
 
