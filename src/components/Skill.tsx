@@ -59,7 +59,7 @@ export default function Skill({directionLeft}: Props) {
         },
         {
             name:"MongoDB",
-            image:"/MongoDB.png",
+            image:"/mongoDB.png",
             level:"80%"
         },
         {
