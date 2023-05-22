@@ -23,6 +23,22 @@ const cards = [
     },
     {
 
+      companyImage:"/brighteyes.png",
+      companyName:"Bright Eyes",
+      tittle:"Web Developer",
+      images:["/netoLogo.png","/htmlLogo.png","/jsLogo.jpg", "/cssLogo.png" ],
+      workTime:"October, 2020 - December, 2021",
+      descriptions:[
+          "Updated the invoice system of company",
+          "Performed tests and fixed technical errors",
+          "Modified the reports using the java script",
+          "Develop suggestions for changes and improvements for ongoing projects",
+          "Updated the retail website of the company",
+          "Helped other staff members with technical issues"
+      ]
+  },
+    {
+
         companyImage:"/brighteyes.png",
         companyName:"Bright Eyes (Internship)",
         tittle:"Web Developer",
@@ -42,7 +58,7 @@ const cards = [
         companyName:"KSPK PTY LTD",
         tittle:"IT help desk",
         images:["/microsoft.webp" ],
-        workTime:"Dec, 2019 - Dec, 2021",
+        workTime:"July, 2019 - June, 2020",
         descriptions:[
             "Understood customer needs and recommended the effective solutions to suit their needs",
             "Identified and resolved client concerns",
@@ -62,7 +78,7 @@ const cards = [
    <>
 
         {cards.map((card)=>(
-            <article key={card.companyName} className="flex flex-col  rounded-lg items-center space-y-7 flex-shrink-0 h-[600px] w-[350px] md:w-[600px] xl:w-[800px] xl:h-[580px] snap-center bg-[#292929] p-10 hover:opacity-100 opacity-40 cursor-pointer transition-opacity duration-200 overflow-hidden">
+            <article key={card.companyName} className="flex flex-col  rounded-lg items-center space-y-7 flex-shrink-0 h-[100%] w-[350px] md:w-[600px] xl:w-[800px] xl:h-[580px] snap-center bg-[#292929] p-10 hover:opacity-100 opacity-40 cursor-pointer transition-opacity duration-200 overflow-hidden">
        
        <div>
       <motion.img
@@ -73,7 +89,7 @@ const cards = [
         transition={{ duration: 1.2 }}
         whileInView={{ opacity: 1, y: 0 }}
         viewport={{ once: true }}
-        className=" w-[112px] h-[112px]  rounded-full  xl:w-[150px] xl:h-[150px] bg-[#000] object-scale-down  object-center"
+        className=" w-[80px] h-[80px]  rounded-full  xl:w-[150px] xl:h-[150px] bg-[#000] object-scale-down  object-center"
         src= {card.companyImage}
         alt="Company Logo"
       />
@@ -82,8 +98,8 @@ const cards = [
 
 
       <div className="px-0 md:px-10">
-        <h4 className="text-xl font-light">{card.tittle}</h4>
-        <p className="font-bold text-lg md:text-2xl xl:text-2xl mt-1">{card.companyName}</p>
+        <h4 className="text-lg md:text-xl xl:text-xl font-light">{card.tittle}</h4>
+        <p className="font-bold text-sm md:text-2xl xl:text-2xl mt-1">{card.companyName}</p>
         <div className="flex space-x-2 my-2">
             {card.images.map((img)=>(
                 <img
@@ -105,8 +121,8 @@ const cards = [
             alt="next image"
           /> */}
         </div>
-        <p>{card.workTime}</p>
-        <ul className="list-disc text-sm space-y-4 ml-5 ">
+        <p className='text-sm md:text-lg xl:text-lg'>{card.workTime}</p>
+        <ul className="list-disc text-xs md:text-sm xl:text-sm space-y-2 md:space-y-4 xl:space-y-4 ml-5 ">
         {card.descriptions.map((description)=>(
              
              <li key={description}>
