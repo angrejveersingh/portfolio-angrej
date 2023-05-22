@@ -19,7 +19,7 @@ export default function Hero({}: Props) {
   return (
     <div style={{scrollBehavior:'smooth'}} className='h-screen flex flex-col space-y-8 items-center justify-center text-center overflow-hidden'>
         <BackgroundCircles/>
-        <img className='relative rounded-full h-32 w-32 mx-auto object-cover' src='./IMG6.jpg' alt='Angrej Image'/>
+        <img className='relative rounded-full h-32 w-32 mx-auto object-cover' src='./IMG9.jpg' alt='Angrej Image'/>
 
         <div className='z-20'>
             <h2 className='text-xs xl:text-sm md:text-sm  uppercase text-gray-500 pb-2 tracking-[10px] md:tracking-[15px] xl:tracking-[15px]'>Software Engineer</h2>
