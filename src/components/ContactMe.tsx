@@ -38,12 +38,12 @@ export default function ContactMe({}: Props) {
         Contact
         </h3>
 
-        <div className='flex absolute top-36 flex-col space-y-10'>
+        <div className='flex absolute top-36 flex-col space-y-6 md:space-y-8 xl:space-y-10 '>
             <h4 className='text-lg md:text-4xl xl:text-4xl font-semibold text-center'>
                 I have got just what you need.{" "}
                 <span className='decoration-[#F7AB0A]/50 underline'>Lets Talk</span>
             </h4>
-            <div className='space-y-10'>
+            <div className='space-y-6 md:space-y-8 xl:space-y-10'>
                 <div className='flex items-center space-x-5 justify-center'>
                 <PhoneIcon className='text-[#F7AB0A] h-5 w-5 md:w-7 md:h-7 xl:h-7  xl:w-7  animate-pulse'/>
                 <p className='text-lg md:text-2xl xl:text-2xl'>+14372564004</p>
