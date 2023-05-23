@@ -4,6 +4,7 @@ import {PhoneIcon, MapPinIcon, EnvelopeIcon} from "@heroicons/react/24/solid"
 import { useForm, SubmitHandler } from "react-hook-form";
 import emailjs from '@emailjs/browser';
 
+
 type Inputs = {
   name: string,
   email: string,
@@ -21,7 +22,7 @@ export default function ContactMe({}: Props) {
         setSentEmail(1);
         e.preventDefault();
     
-        emailjs.sendForm('service_1ax5sgh', 'template_9cqyrjk', e.target, 'GKBQ4rgl_V94HGFcA')
+        emailjs.sendForm(`${process.env.SERVICE_KEY}`, `${process.env.TEMPLETE_KEY}`, e.target, `${process.env.PROJECT_ID}`)
           .then((result) => {
               console.log(form.current);
           }, (error) => {
