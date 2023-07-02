@@ -981,11 +981,11 @@ self.__RSC_MANIFEST={
   },
   "edgeSSRModuleMapping": {},
   "cssFiles": {
-    "/Users/angrej/Desktop/MyDevelopments/nextApps/portfolio/portfolio-angrej/src/app/layout": [
-      "static/css/app/layout.css"
-    ],
     "/Users/angrej/Desktop/MyDevelopments/nextApps/portfolio/portfolio-angrej/src/app/page": [
       "static/css/app/page.css"
+    ],
+    "/Users/angrej/Desktop/MyDevelopments/nextApps/portfolio/portfolio-angrej/src/app/layout": [
+      "static/css/app/layout.css"
     ]
   },
   "clientModules": {
@@ -2637,20 +2637,6 @@ self.__RSC_MANIFEST={
       ],
       "async": false
     },
-    "/Users/angrej/Desktop/MyDevelopments/nextApps/portfolio/portfolio-angrej/src/app/globals.css#": {
-      "id": "null",
-      "name": "default",
-      "chunks": [
-        "static/css/app/layout.css"
-      ]
-    },
-    "/Users/angrej/Desktop/MyDevelopments/nextApps/portfolio/portfolio-angrej/node_modules/next/font/google/target.css?{\"path\":\"src/app/layout.tsx\",\"import\":\"Inter\",\"arguments\":[{\"subsets\":[\"latin\"]}],\"variableName\":\"inter\"}#": {
-      "id": "null",
-      "name": "default",
-      "chunks": [
-        "static/css/app/layout.css"
-      ]
-    },
     "/Users/angrej/Desktop/MyDevelopments/nextApps/portfolio/portfolio-angrej/node_modules/next/font/google/target.css?{\"path\":\"src/app/page.tsx\",\"import\":\"Inter\",\"arguments\":[{\"subsets\":[\"latin\"]}],\"variableName\":\"inter\"}#": {
       "id": "null",
       "name": "default",
@@ -2904,6 +2890,20 @@ self.__RSC_MANIFEST={
         "app/page:static/chunks/app/page.js"
       ],
       "async": false
+    },
+    "/Users/angrej/Desktop/MyDevelopments/nextApps/portfolio/portfolio-angrej/src/app/globals.css#": {
+      "id": "null",
+      "name": "default",
+      "chunks": [
+        "static/css/app/layout.css"
+      ]
+    },
+    "/Users/angrej/Desktop/MyDevelopments/nextApps/portfolio/portfolio-angrej/node_modules/next/font/google/target.css?{\"path\":\"src/app/layout.tsx\",\"import\":\"Inter\",\"arguments\":[{\"subsets\":[\"latin\"]}],\"variableName\":\"inter\"}#": {
+      "id": "null",
+      "name": "default",
+      "chunks": [
+        "static/css/app/layout.css"
+      ]
     }
   }
 }

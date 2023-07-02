@@ -26,7 +26,7 @@ export default function Experience({}: Props) {
       >
         {/* <EducationCard/> */}
 
-        <ol className=" items-center flex-row sm:flex ">
+        <ol className="top-6 relative items-center flex-row sm:flex ">
           <motion.li 
           initial={{ opacity: 0 }}
           whileInView={{ opacity: 1 }}
