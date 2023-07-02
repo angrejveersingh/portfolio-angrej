@@ -1,0 +1,76 @@
+@media only screen and (max-width: 375px) {
+   .education{
+     font-size: 1rem !important;
+     top: 4rem !important;
+   }
+
+   .educationSection{
+    top: 10px !important;
+    position: relative;
+   }
+
+   .experienceImage{
+      height: 60px !important;
+      width: 60px !important;
+      top: 0 !important;
+      position: relative;
+   }
+
+   .aboutText{
+    width: 400px;
+    padding-left: 15px;
+    padding-right: 15px;
+    padding-top: 0;
+   }
+   .headingAbout{
+    font-size: 1.2rem;
+   }
+
+   .experienceImage{
+    min-height: 10%;
+   }
+
+   .projectText{
+    width: 400px;
+    padding-left: 20px;
+    padding-right: 20px;
+   }
+
+   .contactBody{
+    top: 6rem !important;
+   }
+
+   .contactInfo{
+    
+    margin-top: 8px !important;
+    
+   }
+
+   .contactInfoDiv{
+    margin-top: 8px !important;
+    margin-bottom: 0px !important;
+   }
+
+   
+  }
+
+
+  @media only screen and (max-width: 400px) {
+    .aboutText{
+      width: 400px;
+      padding-left: 15px;
+      padding-right: 15px;
+      padding-top: 0;
+     }
+     .projectText{
+      width: 400px;
+      padding-left: 20px;
+      padding-right: 20px;
+     }
+     
+  }
+
+ 
+
+
+  /* absolute top-24 uppercase tracking-[20px] text-gray-500 text-2xl */

@@ -553,6 +553,39 @@ video {
   --tw-backdrop-saturate:  ;
   --tw-backdrop-sepia:  ;
 }
+.container {
+  width: 100%;
+}
+@media (min-width: 640px) {
+
+  .container {
+    max-width: 640px;
+  }
+}
+@media (min-width: 768px) {
+
+  .container {
+    max-width: 768px;
+  }
+}
+@media (min-width: 1024px) {
+
+  .container {
+    max-width: 1024px;
+  }
+}
+@media (min-width: 1280px) {
+
+  .container {
+    max-width: 1280px;
+  }
+}
+@media (min-width: 1536px) {
+
+  .container {
+    max-width: 1536px;
+  }
+}
 .heroButtonClass {
   border-radius: 9999px;
   border-width: 1px;
@@ -763,20 +796,14 @@ video {
 .h-\[80px\] {
   height: 80px;
 }
+.h-\[99\.5\%\] {
+  height: 99.5%;
+}
 .h-full {
   height: 100%;
 }
 .h-screen {
   height: 100vh;
-}
-.h-\[90\%\] {
-  height: 90%;
-}
-.h-\[95\%\] {
-  height: 95%;
-}
-.h-\[98\%\] {
-  height: 98%;
 }
 .min-h-screen {
   min-height: 100vh;
@@ -838,6 +865,12 @@ video {
 }
 .w-screen {
   width: 100vw;
+}
+.w-48 {
+  width: 12rem;
+}
+.w-72 {
+  width: 18rem;
 }
 .max-w-6xl {
   max-width: 72rem;
@@ -979,6 +1012,9 @@ video {
 }
 .overflow-y-scroll {
   overflow-y: scroll;
+}
+.scroll-smooth {
+  scroll-behavior: smooth;
 }
 .rounded-full {
   border-radius: 9999px;
@@ -1440,6 +1476,10 @@ body {
     width: 650px;
   }
 
+  .md\:w-auto {
+    width: auto;
+  }
+
   .md\:flex-row {
     flex-direction: row;
   }
@@ -1512,6 +1552,59 @@ body {
     letter-spacing: 15px;
   }
 
+  .md\:scrollbar {
+    scrollbar-color: var(--scrollbar-thumb, initial) var(--scrollbar-track, initial);
+  }
+
+  .md\:scrollbar::-webkit-scrollbar-track {
+    background-color: var(--scrollbar-track);
+    border-radius: var(--scrollbar-track-radius);
+  }
+
+  .md\:scrollbar::-webkit-scrollbar-track:hover {
+    background-color: var(--scrollbar-track-hover, var(--scrollbar-track));
+  }
+
+  .md\:scrollbar::-webkit-scrollbar-track:active {
+    background-color: var(--scrollbar-track-active, var(--scrollbar-track-hover, var(--scrollbar-track)));
+  }
+
+  .md\:scrollbar::-webkit-scrollbar-thumb {
+    background-color: var(--scrollbar-thumb);
+    border-radius: var(--scrollbar-thumb-radius);
+  }
+
+  .md\:scrollbar::-webkit-scrollbar-thumb:hover {
+    background-color: var(--scrollbar-thumb-hover, var(--scrollbar-thumb));
+  }
+
+  .md\:scrollbar::-webkit-scrollbar-thumb:active {
+    background-color: var(--scrollbar-thumb-active, var(--scrollbar-thumb-hover, var(--scrollbar-thumb)));
+  }
+
+  .md\:scrollbar::-webkit-scrollbar-corner {
+    background-color: var(--scrollbar-corner);
+    border-radius: var(--scrollbar-corner-radius);
+  }
+
+  .md\:scrollbar::-webkit-scrollbar-corner:hover {
+    background-color: var(--scrollbar-corner-hover, var(--scrollbar-corner));
+  }
+
+  .md\:scrollbar::-webkit-scrollbar-corner:active {
+    background-color: var(--scrollbar-corner-active, var(--scrollbar-corner-hover, var(--scrollbar-corner)));
+  }
+
+  .md\:scrollbar {
+    scrollbar-width: auto;
+  }
+
+  .md\:scrollbar::-webkit-scrollbar {
+    display: block;
+    width: var(--scrollbar-width, 16px);
+    height: var(--scrollbar-height, 16px);
+  }
+
   .md\:scrollbar-track-gray-400\/20 {
     --scrollbar-track: rgb(156 163 175 / 0.2) !important;
   }
@@ -1579,10 +1672,6 @@ body {
     height: 650px;
   }
 
-  .xl\:h-\[98\%\] {
-    height: 98%;
-  }
-
   .xl\:h-\[99\%\] {
     height: 99%;
   }
@@ -1621,6 +1710,10 @@ body {
 
   .xl\:w-\[800px\] {
     width: 800px;
+  }
+
+  .xl\:w-auto {
+    width: auto;
   }
 
   .xl\:flex-row {

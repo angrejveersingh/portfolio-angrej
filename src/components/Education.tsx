@@ -1,6 +1,7 @@
 "use client"
 import React from 'react'
 import { motion } from "framer-motion"
+import styles from "../components/css/smallScreen.module.css"
 
 
 type Props = {}
@@ -14,17 +15,18 @@ export default function Experience({}: Props) {
       transition={{ duration: 1.5 }}
       className="h-screen flex relative overflow-hiden flex-col text-left md:flex-row max-w-full px-10 justify-evenly mx-auto items-center"
     >
-      <h3 className="absolute top-24 uppercase tracking-[20px] text-gray-500 text-2xl">
+      <h3 
+      className={`${styles.education} absolute top-24 uppercase tracking-[20px] text-gray-500 text-2xl`}>
         Education
       </h3>
 
       <div
        
-        className="w-full  flex space-x-5 overflow-x-scroll p-10 snap-x snap-mandatory "
+        className={`w-full  flex space-x-5 overflow-x-scroll p-10 snap-x snap-mandatory ${styles.educationSection}`}
       >
         {/* <EducationCard/> */}
 
-        <ol className=" items-center flex-row sm:flex">
+        <ol className=" items-center flex-row sm:flex ">
           <motion.li 
           initial={{ opacity: 0 }}
           whileInView={{ opacity: 1 }}

@@ -1,6 +1,7 @@
 "use client"
 import React,{ useState, useCallback, useEffect }  from 'react'
 import { motion } from "framer-motion"
+import styles from "../components/css/smallScreen.module.css"
 
 
 const useMediaQuery = (width: any) => {
@@ -101,7 +102,7 @@ export default function Projects({}: Props) {
                             
                         </h4>
 
-                        <p className='text-sm md:text-base xl:text-lg text-center md:text-left'>
+                        <p className={`${styles.projectText} text-sm md:text-base xl:text-lg text-center md:text-left`}>
                             {project.description}
                         </p>
                     </div>

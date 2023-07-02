@@ -13,15 +13,16 @@ const inter = Inter({ subsets: ['latin'] })
 
 export default function Home() {
   return (
-    <div style={{scrollBehavior:'smooth'}} className='h-screen snap-y snap-mandatory overflow-y-scroll overflow-x-hidden z-0 text-white scrollbar md:scrollbar-track-gray-400/20 md:scrollbar-thumb-[#F7AB0A]/80 xl:scrollbar xl:scrollbar-track-gray-400/20 xl:scrollbar-thumb-[#F7AB0A]/80'>
+    <div  className='h-screen relative scroll-smooth snap-y snap-mandatory overflow-y-scroll overflow-x-hidden z-0 text-white md:scrollbar  md:scrollbar-track-gray-400/20 md:scrollbar-thumb-[#F7AB0A]/80 xl:scrollbar xl:scrollbar-track-gray-400/20 xl:scrollbar-thumb-[#F7AB0A]/80'>
       <div>
         <title>Buttar&apos;s portfolio</title>
       </div>
 
 
       {/* Header */}
-
-      <Header/>
+    <div className='top-0 sticky'>
+      <Header></Header>
+      </div>
 
       {/* Hero */}
 
@@ -58,7 +59,7 @@ export default function Home() {
       
 
       {/* Contact Me */}
-      <section id='contact' className='snap-center'>
+      <section id='contact' className='snap-center h-[99.5%] top-0'>
         <ContactMe/>
       </section>
 

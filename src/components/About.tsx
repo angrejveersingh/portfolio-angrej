@@ -1,6 +1,7 @@
 'use client'
 import React from 'react'
 import { motion } from "framer-motion"
+import styles from "../components/css/smallScreen.module.css"
 
 type Props = {}
 
@@ -37,10 +38,10 @@ export default function About({}: Props) {
       />
 
       <div className="space-y-10 px-10 md:px-10">
-        <h4 className="text-2xl md:text-2xl xl:text-4xl font-semibold">
+        <h4 className={`${styles.headingAbout} text-2xl md:text-2xl xl:text-4xl font-semibold`}>
           Brief Introduction of <span className="underline decoration-[#F7AB0A]/50">Angrej veer Singh</span>
         </h4>
-        <p className='text-sm'>
+        <p className={`${styles.aboutText} text-sm`}>
           Possess a solid understanding of computer fundamentals. Reliable,
           accurate, and consistent in carrying out duties until they are
           completed successfully. Excel in planning, forecasting, establishing
