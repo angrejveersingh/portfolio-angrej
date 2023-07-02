@@ -1,6 +1,7 @@
 "use client"
 import React from 'react'
 import { motion } from "framer-motion"
+import styles from "../components/css/smallScreen.module.css"
 
 type Props = {}
 
@@ -61,8 +62,7 @@ const cards = [
         workTime:"July, 2019 - June, 2020",
         descriptions:[
             "Understood customer needs and recommended the effective solutions to suit their needs",
-            "Identified and resolved client concerns",
-            "Resolved service problems by clarifying the customer's complaint, determined the cause of the problem, and explained the best solution to solve the problem",
+            "Resolved service problems by clarifying the customer's complaint, and explained the best solution to solve the problem",
             "Contributed to teamwork by motivating team members to excel in roles",
             "Invoice handling and Managing company data"
         ]
@@ -80,7 +80,7 @@ const cards = [
         {cards.map((card)=>(
             <article key={card.companyName} className="flex flex-col  rounded-lg items-center space-y-7 flex-shrink-0 h-[100%] w-[350px] md:w-[600px] xl:w-[800px] xl:h-[580px] snap-center bg-[#292929] p-10 hover:opacity-100 opacity-40 cursor-pointer transition-opacity duration-200 overflow-hidden">
        
-       <div>
+       <div className={`${styles.experienceImage}`}>
       <motion.img
         initial={{
           y: -100,
@@ -89,7 +89,7 @@ const cards = [
         transition={{ duration: 1.2 }}
         whileInView={{ opacity: 1, y: 0 }}
         viewport={{ once: true }}
-        className=" w-[80px] h-[80px]  rounded-full  xl:w-[150px] xl:h-[150px] bg-[#000] object-scale-down  object-center"
+        className={` w-[80px] h-[80px]  rounded-full  xl:w-[150px] xl:h-[150px] bg-[#000] object-scale-down  object-center ${styles.experienceImage}`}
         src= {card.companyImage}
         alt="Company Logo"
       />

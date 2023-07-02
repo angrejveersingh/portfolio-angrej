@@ -67,3 +67,82 @@
 }.__className_0ec1f4 {font-family: '__Inter_0ec1f4', '__Inter_Fallback_0ec1f4';font-style: normal
 }
 
+/*!***********************************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** css ./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[2].oneOf[8].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[2].oneOf[8].use[3]!./src/components/css/smallScreen.module.css ***!
+  \***********************************************************************************************************************************************************************************************************************************************************************************/
+@media only screen and (max-width: 375px) {
+   .smallScreen_education__G_PWb{
+     font-size: 1rem !important;
+     top: 4rem !important;
+   }
+
+   .smallScreen_educationSection__BgZOo{
+    top: 10px !important;
+    position: relative;
+   }
+
+   .smallScreen_experienceImage__g1F_Z{
+      height: 60px !important;
+      width: 60px !important;
+      top: 0 !important;
+      position: relative;
+   }
+
+   .smallScreen_aboutText__Z5PB8{
+    width: 400px;
+    padding-left: 15px;
+    padding-right: 15px;
+    padding-top: 0;
+   }
+   .smallScreen_headingAbout__Hm84c{
+    font-size: 1.2rem;
+   }
+
+   .smallScreen_experienceImage__g1F_Z{
+    min-height: 10%;
+   }
+
+   .smallScreen_projectText__v0ra5{
+    width: 400px;
+    padding-left: 20px;
+    padding-right: 20px;
+   }
+
+   .smallScreen_contactBody__UdMj6{
+    top: 6rem !important;
+   }
+
+   .smallScreen_contactInfo__3PAoy{
+    
+    margin-top: 8px !important;
+    
+   }
+
+   .smallScreen_contactInfoDiv__f33IO{
+    margin-top: 8px !important;
+    margin-bottom: 0px !important;
+   }
+
+   
+  }
+
+
+  @media only screen and (max-width: 400px) {
+    .smallScreen_aboutText__Z5PB8{
+      width: 400px;
+      padding-left: 15px;
+      padding-right: 15px;
+      padding-top: 0;
+     }
+     .smallScreen_projectText__v0ra5{
+      width: 400px;
+      padding-left: 20px;
+      padding-right: 20px;
+     }
+     
+  }
+
+ 
+
+
+  /* absolute top-24 uppercase tracking-[20px] text-gray-500 text-2xl */
