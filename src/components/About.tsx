@@ -34,7 +34,7 @@ export default function About({}: Props) {
         width={350}
         height={400}
         alt="Author image"
-        className="-mb-20 md:mb-0 w-40 h-40 flex-shrink-0 mt-10 rounded-full object-cover md:rounded-lg md:w-72 md:h-72 xl:w-[350px] xl:h-[450px]"
+        className="-mb-20 md:mb-0 w-36 h-36 flex-shrink-0 mt-10 rounded-full object-cover md:rounded-lg md:w-72 md:h-72 xl:w-[350px] xl:h-[450px]"
       />
 
       <div className="space-y-10 px-10 md:px-10">

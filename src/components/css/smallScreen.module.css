@@ -55,7 +55,7 @@
   }
 
 
-  @media only screen and (max-width: 400px) {
+  @media only screen and (max-width: 500px) {
     .aboutText{
       width: 400px;
       padding-left: 15px;
@@ -67,6 +67,8 @@
       padding-left: 20px;
       padding-right: 20px;
      }
+
+     
      
   }
 
