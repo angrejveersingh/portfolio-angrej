@@ -48,7 +48,7 @@ export default function ContactMe({}: Props) {
             <div className={`${styles.contactInfoDiv} space-y-6 md:space-y-8 xl:space-y-10`}>
                 <div className={`${styles.contactInfo} flex items-center space-x-5 justify-center`}>
                 <PhoneIcon className='text-[#F7AB0A] h-5 w-5 md:w-7 md:h-7 xl:h-7  xl:w-7  animate-pulse'/>
-                <p className='text-lg md:text-2xl xl:text-2xl'>+14372564004</p>
+                <p className='text-lg md:text-2xl xl:text-2xl'>+61426400997</p>
                 </div>
 
                 <div className={`${styles.contactInfo} flex items-center space-x-5 justify-center`}>
@@ -58,7 +58,7 @@ export default function ContactMe({}: Props) {
 
                 <div className={`${styles.contactInfo} flex items-center space-x-5 justify-center`}>
                 <MapPinIcon className='text-[#F7AB0A] h-5 w-5 md:w-7 md:h-7 xl:h-7  xl:w-7 animate-pulse'/>
-                <p className='text-lg md:text-2xl xl:text-2xl'>Brampton, Ontario</p>
+                <p className='text-lg md:text-2xl xl:text-2xl'>Brisbane, QLD</p>
                 </div>
 
                 
