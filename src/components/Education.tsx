@@ -67,7 +67,7 @@ export default function Experience({}: Props) {
                 March, 2016 - July, 2019
               </time>
               <p className="text-base hidden  md:flex xl:flex font-normal text-gray-500 dark:text-gray-400">
-                Lernt about the web development, oop concept and basic concepts of networking
+                Learnt about the web development, oop concept and basic concepts of networking
               </p>
             </div>
           </motion.li>
